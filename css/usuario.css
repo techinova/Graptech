@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.dashboard-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column; /* Mudança para coluna para melhor organização */
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff; /* Fundo branco para o cartão do usuário */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave ao cartão */
+}
+
+.user-info {
+    display: flex; /* Usar flexbox para alinhamento */
+    justify-content: space-between; /* Espaço entre o rótulo e o valor */
+    margin-bottom: 15px; /* Espaço entre as fileiras */
+}
+
+.user-photo {
+    width: 100px;
+    height: 133px; /* Proporção 3x4 */
+    object-fit: cover; /* Corta a imagem para preencher o espaço */
+    border: 3px solid #FFD700; /* Borda de destaque com cor dourada */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.user-photo:hover {
+    transform: scale(1.05); /* Aumenta a imagem quando o mouse passa por cima */
+}
+
+.user-actions {
+    display: flex; /* Usar flexbox para alinhar os botões verticalmente */
+    flex-direction: column; /* Alinhamento vertical */
+    margin-top: 20px; /* Espaço acima dos botões */
+}
+
+.btn {
+    background-color: #007bff; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    text-align: center; /* Alinhamento do texto no botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para pointer */
+    margin: 5px 0; /* Margem vertical entre os botões */
+    transition: background-color 0.3s; /* Animação suave ao passar o mouse */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+.photo-display {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+.photo-upload {
+    margin-top: 15px; /* Espaço entre a foto e o botão de upload */
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza o botão */
+}
+
+.photo-upload input[type="file"] {
+    margin-bottom: 10px; /* Espaço entre o input e o botão */
+    padding: 5px; /* Espaçamento interno do input */
+    border: 2px solid #FFD700; /* Borda com cor dourada */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #fff; /* Fundo branco */
+}
+
+.photo-upload .btn {
+    background-color: #FF0000; /* Cor do botão */
+    color: white; /* Texto do botão */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para pointer */
+    transition: background-color 0.3s; /* Animação suave ao passar o mouse */
+}
+
+.photo-upload .btn:hover {
+    background-color: #e60000; /* Cor do botão ao passar o mouse */
+}
